@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap');
+@import "variables";
+
+:root {
+	font-size: calc(10px + 0.33vw);
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	outline: none;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: Quicksand, sans-serif;
+	background-color: $colorBg;
+	color: $colorWhite;
+	font-size: 1.25rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+@import "typography";
+@import "layout";

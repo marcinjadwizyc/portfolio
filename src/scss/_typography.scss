@@ -1,0 +1,30 @@
+.credits {
+	font-size: 12px;
+}
+
+.title {
+	font-weight: 500;
+	text-transform: capitalize;
+
+	&--primary {
+		font-size: 3rem;
+	}
+
+	&--secondary {
+		font-size: 1.8rem;
+	}
+
+	&--tertiary {
+		font-size: 1.4rem;
+	}
+}
+
+.title--primaryColor {
+	color: $colorPrimary;
+}
+
+@media only screen and (min-width: 500px) {
+	.title {
+		letter-spacing: 4px;
+	}
+}

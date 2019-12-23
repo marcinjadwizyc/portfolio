@@ -1,0 +1,47 @@
+@import "../variables";
+
+.nav {
+}
+
+.list {
+	display: flex;
+	width: 24rem;
+
+	.item:first-child .btn {
+		border-top-left-radius: $borderRadius;
+		border-bottom-left-radius: $borderRadius;
+		border-right: none;
+	}
+
+	.item:last-child .btn {
+		border-top-right-radius: $borderRadius;
+		border-bottom-right-radius: $borderRadius;
+		border-left: none;
+	}
+}
+
+.item {
+	flex-grow: 1;
+}
+
+.btn {
+	width: 100%;
+	padding: .6rem;
+	background-color: transparent;
+	border: 1px solid $colorWhite;
+	cursor: pointer;
+	transition: $transitionShort;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn--active {
+	background-color: $colorPrimary;
+}
+
+@media only screen and (min-width: 500px) {
+	.list {
+		width: 30rem;
+	}
+}
