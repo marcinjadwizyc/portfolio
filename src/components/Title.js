@@ -26,13 +26,12 @@ const Title = ({ level, isPrimaryColor, text }) => {
 Title.propTypes = {
 	level: PropTypes.number,
 	isPrimaryColor: PropTypes.bool,
-	text: PropTypes.string
+	text: PropTypes.string.isRequired
 };
 
 Title.defaultProps = {
 	level: 2,
-	isPrimaryColor: false,
-	text: ""
+	isPrimaryColor: false
 };
 
 export default Title;

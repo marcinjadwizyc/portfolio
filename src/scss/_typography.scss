@@ -23,6 +23,10 @@
 	color: $colorPrimary;
 }
 
+.text {
+	line-height: 1.5;
+}
+
 @media only screen and (min-width: 500px) {
 	.title {
 		letter-spacing: 4px;

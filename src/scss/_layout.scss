@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 	padding: 1.5rem;
 }
@@ -41,11 +42,31 @@
 .main {
 	display: none;
 	padding: 3rem 0;
+	max-width: 50rem;
 }
 
 .main--open {
 	display: block;
 	flex-grow: 1;
+}
+
+.about {
+	text-align: justify;
+
+	.text {
+		margin-bottom: 1.5rem;
+	}
+
+	&__row {
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		& > *:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
 }
 
 .footer {
