@@ -7,13 +7,6 @@
 .title {
 	color: $colorPrimary;
 	margin-right: 1.5rem;
-
-	&::after {
-		content: ":";
-		display: inline-block;
-		width: 1px;
-		height: 100%;
-	}
 }
 
 .body {

@@ -18,7 +18,7 @@ export default {
 			'Zapraszam do zapoznania się z moimi projektami w zakładce "Projekty". Jeśli chcesz się ze mną skontaktować skorzystaj z formularza na stronie lub zajrzyj na moje profile na GitHub i LinkedIn do których linki znajdziesz poniżej.'
 		],
 		list: {
-			title: "Technologie",
+			title: "Technologie:",
 			content: [ "HTML5", "CSS3", "JavaScript ES6+", "React", "Gatsby" ]
 		},
 		links: [
@@ -36,6 +36,37 @@ export default {
 				url: "https://drive.google.com/file/d/1dNvd7Ht8IXqT0_N8FpNF3bRgLv4eVG92/view?usp=sharing",
 				icon: <FaAddressCard />,
 				text: "CV"
+			}
+		]
+	},
+	contact: {
+		inputs: [
+			{
+				name: "name",
+				label: "Imię",
+				type: "text",
+				placeholder: "Twoje imię...",
+				isTextarea: false
+			},
+			{
+				name: "email",
+				label: "E-mail",
+				type: "email",
+				placeholder: "Twój adres e-mail...",
+				isTexarea: false
+			},
+			{
+				name: "subject",
+				label: "Temat",
+				type: "text",
+				placeholder: "Temat twojej wiadomości...",
+				isTextarea: false
+			},
+			{
+				name: "message",
+				label: "Wiadomość",
+				placeholder: "Treść twojej wiadomości...",
+				isTextarea: true
 			}
 		]
 	}
