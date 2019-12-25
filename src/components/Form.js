@@ -5,19 +5,32 @@ import FormInput from "./FormInput";
 
 class Form extends Component {
 	state = {
-		name: "",
-		email: "",
-		subject: "",
-		message: ""
+		name: {
+			value: "",
+			isInvalid: false
+		},
+		email: {
+			value: "",
+			isInvalid: false
+		},
+		subject: {
+			value: "",
+			isInvalid: false
+		},
+		message: {
+			value: "",
+			isInvalid: false
+		}
 	};
 
 	changeHandler = (event) => {
 		const inputName = event.target.id;
 
 		const newState = {
-			...this.state,
-			[inputName]: event.target.value
+			...this.state
 		};
+
+		newState[inputName].value = event.target.value;
 
 		this.setState(newState);
 	};
@@ -27,13 +40,10 @@ class Form extends Component {
 			return (
 				<FormInput
 					key={item.name}
-					name={item.name}
-					label={item.label}
-					type={item.type}
-					value={this.state[item.name]}
-					placeholder={item.placeholder}
+					inputData={item}
+					value={this.state[item.name].value}
+					isInvalid={this.state[item.name].isInvalid}
 					changeHandler={this.changeHandler}
-					isTextarea={item.isTextarea}
 				/>
 			);
 		});
@@ -45,5 +55,9 @@ class Form extends Component {
 		);
 	}
 }
+
+Form.propTypes = {
+	data: PropTypes.object.isRequired
+};
 
 export default Form;
