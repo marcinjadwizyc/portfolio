@@ -1,26 +1,15 @@
 import React, { useContext } from "react";
+import StateContext from "../context/stateContext";
 import styles from "../scss/modules/nav.module.scss";
 
-import ContentContext from "../contentContext";
-
 const Nav = () => {
-	const context = useContext(ContentContext);
+	const context = useContext(StateContext);
 
-	const items = context.data.header.navLinks.map((item) => {
-		let btnClasses = [ `${styles.btn}` ];
-
-		if (context.activeSection === item.id) {
-			btnClasses.push(`${styles.btnActive}`);
-		}
-
+	const items = context.data.header.links.map((item) => {
 		return (
-			<li key={item.id} className={styles.item}>
-				<button
-					id={item.id}
-					className={btnClasses.join(" ")}
-					onClick={(event) => context.activeSectionHandler(event)}
-				>
-					{item.name}
+			<li className={styles.item}>
+				<button id={item.id} onClick={(event) => context.activeSectionHandler(event)}>
+					{item.text}
 				</button>
 			</li>
 		);

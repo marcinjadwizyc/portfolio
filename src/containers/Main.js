@@ -1,36 +1,37 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import ContentContext from "../contentContext";
-import About from "./subSections/About";
-import Projects from "./subSections/Projects";
-import Contact from "./subSections/Contact";
+import Section from "../containers/Section";
 
-const Main = () => {
-	const context = useContext(ContentContext);
-
+const Main = ({ activeSection }) => {
 	let classes = [ "main" ];
 
-	if (context.activeSection !== "") {
+	if (activeSection !== "") {
 		classes.push("main--open");
 	}
 
-	let section;
+	const sectionsData = [
+		{ id: "about", content: "Hello from About" },
+		{ id: "projects", content: "Hello from Projects" },
+		{ id: "contact", content: "Hello from Contact" }
+	];
 
-	switch (context.activeSection) {
-		case "about":
-			section = <About />;
-			break;
-		case "projects":
-			section = <Projects />;
-			break;
-		case "contact":
-			section = <Contact />;
-			break;
-		default:
-			section = null;
-	}
+	const sections = sectionsData.map((item) => {
+		let isOpen;
 
-	return <main className={classes.join(" ")}>{section}</main>;
+		if (activeSection === item.id) {
+			isOpen = true;
+		} else {
+			isOpen = false;
+		}
+
+		return (
+			<Section id={item.id} isOpen={isOpen}>
+				{item.content}
+			</Section>
+		);
+	});
+
+	return <main className={classes.join(" ")}>{sections}</main>;
 };
 
 export default Main;

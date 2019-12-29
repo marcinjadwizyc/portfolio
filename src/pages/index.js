@@ -1,42 +1,28 @@
 import React, { useState } from "react";
-import "../scss/global.scss";
+import StateContext from "../context/stateContext";
 import dataPL from "../data/dataPL";
-import dataENG from "../data/dataENG";
+import "../scss/global.scss";
 
-import ContentContext from "../contentContext";
-import ParticlesBg from "../components/ParticlesBg";
 import Header from "../containers/Header";
 import Main from "../containers/Main";
 import Footer from "../containers/Footer";
 
 const Index = () => {
-	const [ lang, changeLang ] = useState("PL");
-	const [ activeSection, changeActiveSection ] = useState("");
+	const [ activeSection, changeActiveSection ] = useState("about");
 
 	const activeSectionHandler = (event) => {
-		const sectionID = event.target.id;
+		const newActiveSection = event.target.id;
 
-		changeActiveSection(sectionID);
+		changeActiveSection(newActiveSection);
 	};
-
-	let data;
-
-	if (lang === "PL") {
-		data = dataPL;
-	} else {
-		data = dataENG;
-	}
 
 	return (
 		<div className="container">
-			<ContentContext.Provider
-				value={{ data: data, activeSection: activeSection, activeSectionHandler: activeSectionHandler }}
-			>
-				<ParticlesBg />
-				<Header />
-				<Main />
+			<StateContext.Provider value={{ data: dataPL, activeSectionHandler: activeSectionHandler }}>
+				<Header activeSection={activeSection} />
+				<Main activeSection={activeSection} />
 				<Footer />
-			</ContentContext.Provider>
+			</StateContext.Provider>
 		</div>
 	);
 };
