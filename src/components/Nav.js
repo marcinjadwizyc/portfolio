@@ -6,9 +6,15 @@ const Nav = () => {
 	const context = useContext(StateContext);
 
 	const items = context.data.header.links.map((item) => {
+		let btnClasses = [`${styles.btn}`];
+
+		if(item.id === context.activeSection) {
+			btnClasses.push(`${styles.btnActive}`)
+		}
+
 		return (
-			<li className={styles.item}>
-				<button id={item.id} onClick={(event) => context.activeSectionHandler(event)}>
+			<li key={item.id} className={styles.item}>
+				<button id={item.id} className={btnClasses.join(" ")} onClick={(event) => context.activeSectionHandler(event)}>
 					{item.text}
 				</button>
 			</li>

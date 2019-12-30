@@ -1,0 +1,19 @@
+@import "../variables";
+
+.link {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    transition: $transitionShort;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $colorPrimary;
+    }
+}
+
+.text {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}

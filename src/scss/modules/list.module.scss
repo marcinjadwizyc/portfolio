@@ -1,0 +1,26 @@
+@import "../variables";
+
+.container {
+    display: flex;
+}
+
+.title {
+    color: $colorPrimary;
+    margin-right: 1.5rem;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item:not(:last-child) {
+    margin-right: 1rem;
+
+    &:after {
+        content: ",";
+        display: inline-block;
+        width: 3px;
+        height: 100%;
+    }
+}

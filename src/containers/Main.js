@@ -1,6 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Section from "../containers/Section";
+import About from "../fragments/About";
+import Projects from "../fragments/Projects";
+import Contact from "../fragments/Contact";
 
 const Main = ({ activeSection }) => {
 	let classes = [ "main" ];
@@ -10,22 +14,22 @@ const Main = ({ activeSection }) => {
 	}
 
 	const sectionsData = [
-		{ id: "about", content: "Hello from About" },
-		{ id: "projects", content: "Hello from Projects" },
-		{ id: "contact", content: "Hello from Contact" }
+		{ name: "about", content: <About /> },
+		{ name: "projects", content: <Projects /> },
+		{ name: "contact", content: <Contact /> }
 	];
 
 	const sections = sectionsData.map((item) => {
 		let isOpen;
 
-		if (activeSection === item.id) {
+		if (activeSection === item.name) {
 			isOpen = true;
 		} else {
 			isOpen = false;
 		}
 
 		return (
-			<Section id={item.id} isOpen={isOpen}>
+			<Section key={item.name} name={item.name} isOpen={isOpen}>
 				{item.content}
 			</Section>
 		);
@@ -33,5 +37,9 @@ const Main = ({ activeSection }) => {
 
 	return <main className={classes.join(" ")}>{sections}</main>;
 };
+
+Main.propTypes = {
+	activeSection: PropTypes.string.isRequired
+}
 
 export default Main;

@@ -1,0 +1,27 @@
+.text {
+    line-height: 1.5;
+}
+
+.title {
+    font-weight: 500;
+    text-transform: capitalize;
+
+    &--primary {
+        color: $colorPrimary;
+        font-size: 3rem;
+    }
+
+    &--secondary {
+        font-size: 2rem;
+    }
+}
+
+.credits {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: $breakpoint){
+    .title {
+        letter-spacing: 4px;
+    }
+}

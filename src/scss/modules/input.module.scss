@@ -1,0 +1,48 @@
+@import "../variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.container:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.container--focused .label {
+    color: $colorPrimary;
+}
+
+.container--invalid {
+    .validation {
+        display: block;
+    }
+}
+
+.label {
+    margin-bottom: 5px;
+    transition: $transitionShort;
+}
+
+.input {
+    padding: 4px 6px;
+    color: $colorBg;
+    border: 2px solid $colorWhite;
+    border-radius: $borderRadius;
+    line-height: 1.5;
+    resize: none;
+}
+
+.validation {
+    display: none;
+    font-size: 12px;
+    margin-top: 2px;
+    color: $colorRed;
+}
+
+@media only screen and (min-width: $breakpoint) {
+    .validation {
+        font-size: 14px;
+    }
+}
