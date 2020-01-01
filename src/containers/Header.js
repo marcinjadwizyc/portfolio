@@ -5,7 +5,7 @@ import Title from "../components/Title";
 import Nav from "../components/Nav";
 
 const Header = ({ activeSection, data }) => {
-	const {header:content} = data;
+	const { header: content } = data;
 
 	let classes = [ "header" ];
 
@@ -25,6 +25,6 @@ const Header = ({ activeSection, data }) => {
 Header.propTypes = {
 	activeSection: PropTypes.string.isRequired,
 	data: PropTypes.object.isRequired
-}
+};
 
 export default Header;

@@ -1,20 +1,20 @@
 import React from "react";
-import {FaGithub, FaLinkedin} from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default {
 	header: {
 		links: [
 			{
 				id: "about",
-				text: "O mnie"
+				text: "About"
 			},
 			{
 				id: "projects",
-				text: "Projekty"
+				text: "Projects"
 			},
 			{
 				id: "contact",
-				text: "Kontakt"
+				text: "Contact"
 			}
 		],
 		title: "Marcin Jadwiżyc",
@@ -28,7 +28,7 @@ export default {
 		],
 		list: {
 			title: "Technologie:",
-			content: ["HTML5", "CSS3", "JavaScript ES6+", "React", "Gatsby"]
+			content: [ "HTML5", "CSS3", "JavaScript ES6+", "React", "Gatsby" ]
 		},
 		links: [
 			{

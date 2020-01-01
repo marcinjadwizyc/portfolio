@@ -5,6 +5,7 @@ import dataENG from "../data/dataENG";
 import "../scss/global.scss";
 
 import ParticlesBg from "../components/ParticlesBg";
+import LangPicker from "../components/LangPicker";
 import Header from "../containers/Header";
 import Main from "../containers/Main";
 import Footer from "../containers/Footer";
@@ -19,12 +20,21 @@ const Index = () => {
 		changeActiveSection(newActiveSection);
 	};
 
+	const changeLangHandler = (event) => {
+		const newLang = event.target.textContent;
+
+		changeLang(newLang);
+	};
+
 	const data = lang === "PL" ? dataPL : dataENG;
 
 	return (
 		<div className="container">
 			<ParticlesBg />
-			<StateContext.Provider value={{ data: dataPL, activeSection: activeSection, activeSectionHandler: activeSectionHandler }}>
+			<LangPicker activeSection={activeSection} currentLang={lang} changeLangHandler={changeLangHandler} />
+			<StateContext.Provider
+				value={{ data: data, activeSection: activeSection, activeSectionHandler: activeSectionHandler }}
+			>
 				<Header activeSection={activeSection} data={data} />
 				<Main activeSection={activeSection} />
 				<Footer />
