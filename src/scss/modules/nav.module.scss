@@ -1,51 +1,53 @@
 @import "../variables";
 
 .nav {
-    width: 100%;
-    max-width: 24rem;
+	width: 100%;
+	max-width: 24rem;
 }
 
 .list {
-    display: flex;
+	display: flex;
 
-    .item:first-child .btn {
-        border-top-left-radius: $borderRadius;
-        border-bottom-left-radius: $borderRadius;
-        border-right: none;
-    }
+	.item:first-child .btn {
+		border-top-left-radius: $borderRadius;
+		border-bottom-left-radius: $borderRadius;
+		border-right: none;
+	}
 
-    .item:last-child .btn {
-        border-top-right-radius: $borderRadius;
-        border-bottom-right-radius: $borderRadius;
-        border-left: none;
-    }
+	.item:last-child .btn {
+		border-top-right-radius: $borderRadius;
+		border-bottom-right-radius: $borderRadius;
+		border-left: none;
+	}
 }
 
 .item {
-    flex-grow: 1;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
 }
 
 .btn {
-    width: 100%;
-    padding: 0.6rem 0;
-    border: 1px solid $colorWhite;
-    background-color: transparent;
-    transition: $transitionShort;
-    cursor: pointer;
+	width: 100%;
+	padding: 0.6rem 0;
+	border: 1px solid $colorWhite;
+	background-color: transparent;
+	transition: $transitionShort;
+	cursor: pointer;
 
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: $colorPrimary;
-    }
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $colorPrimary;
+	}
 }
 
 .btn--active {
-    background-color: $colorPrimary;
+	background-color: $colorPrimary;
 }
 
 @media only screen and (min-width: $breakpoint) {
-    .nav {
-        max-width: 28rem;
-    }
+	.nav {
+		max-width: 28rem;
+	}
 }
