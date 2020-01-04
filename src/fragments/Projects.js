@@ -1,14 +1,16 @@
-import React, {useContext} from 'react'
+import React, { useContext } from "react";
 import StateContext from "../context/stateContext";
 
-const Projects = () => {
-    const context = useContext(StateContext);
+import Project from "../components/Project";
 
-    return (
-        <React.Fragment>
-            <p>Hello from Projects</p>
-        </React.Fragment>
-    )
-}
+const Projects = () => {
+	const { data: { projects: data } } = useContext(StateContext);
+
+	const tiles = data.map((item) => {
+		return <Project key={item.id} data={item} />;
+	});
+
+	return <React.Fragment>{tiles}</React.Fragment>;
+};
 
 export default Projects;

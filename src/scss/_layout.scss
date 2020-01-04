@@ -34,7 +34,6 @@
 
 .header--mainOpen {
 	min-height: 1px;
-	padding-bottom: 2rem;
 
 	& > *:not(:last-child) {
 		display: none;
@@ -51,10 +50,22 @@
 	display: block;
 }
 
+.section--open.projects {
+	display: flex;
+}
+
 .main {
 	width: 100%;
+}
+
+.section {
 	max-width: 50rem;
-	margin: 0 auto 3rem auto;
+	margin: 1.5rem auto 3rem auto;
+}
+
+.section.projects {
+	margin-top: 0;
+	max-width: 60rem;
 }
 
 .about {
@@ -73,6 +84,17 @@
 			margin-bottom: 1.5rem;
 		}
 	}
+}
+
+.projects {
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.projects .gatsby-image-wrapper {
+	border-top-left-radius: $borderRadius;
+	border-top-right-radius: $borderRadius;
 }
 
 .footer {

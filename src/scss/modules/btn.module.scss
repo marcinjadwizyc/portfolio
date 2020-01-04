@@ -1,18 +1,18 @@
 @import "../variables";
 
 .btn {
-    padding: 4px 2rem;
-    border: 2px solid $colorPrimary;
-    border-radius: $borderRadius;
-    background-color: $colorPrimary;
-    line-height: 1.5;
-    transition: $transitionShort;
-    cursor: pointer;
+	padding: 4px 2rem;
+	border: 1px solid $colorPrimary;
+	border-radius: $borderRadius;
+	background-color: $colorPrimary;
+	line-height: 1.5;
+	transition: $transitionShort;
+	cursor: pointer;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $colorPrimary;
-        background-color: transparent;
-    }
+	&:hover,
+	&:focus,
+	&:active {
+		color: $colorPrimary;
+		background-color: transparent;
+	}
 }

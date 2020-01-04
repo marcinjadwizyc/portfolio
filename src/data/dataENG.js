@@ -6,15 +6,15 @@ export default {
 		links: [
 			{
 				id: "about",
-				text: "About"
+				text: "O mnie"
 			},
 			{
 				id: "projects",
-				text: "Projects"
+				text: "Projekty"
 			},
 			{
 				id: "contact",
-				text: "Contact"
+				text: "Kontakt"
 			}
 		],
 		title: "Marcin Jadwiżyc",
@@ -43,7 +43,32 @@ export default {
 			}
 		]
 	},
-	projects: {},
+	projects: [
+		{
+			id: "clipboard",
+			title: "Clipboard - HTML i CSS",
+			liveUrl: "/projects/clipboard/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/clipboardTheme"
+		},
+		{
+			id: "fylo",
+			title: "Fylo - HTML, CSS i JS",
+			liveUrl: "/projects/fylo/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/fyloDarkTheme"
+		},
+		{
+			id: "bookmark",
+			title: "Bookmark - Gatsby",
+			liveUrl: "/projects/bookmark/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/bookmarkTheme"
+		},
+		{
+			id: "todo",
+			title: "To Do List - React",
+			liveUrl: "/projects/todo/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/toDoList"
+		}
+	],
 	contact: {
 		btn: "Wyślij",
 		inputs: [

@@ -1,5 +1,5 @@
 import React from "react";
-import {FaGithub, FaLinkedin} from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default {
 	header: {
@@ -28,7 +28,7 @@ export default {
 		],
 		list: {
 			title: "Technologie:",
-			content: ["HTML5", "CSS3", "JavaScript ES6+", "React", "Gatsby"]
+			content: [ "HTML5", "CSS3", "JavaScript ES6+", "React", "Gatsby" ]
 		},
 		links: [
 			{
@@ -43,7 +43,32 @@ export default {
 			}
 		]
 	},
-	projects: {},
+	projects: [
+		{
+			id: "clipboard",
+			title: "Clipboard - HTML i CSS",
+			liveUrl: "/projects/clipboard/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/clipboardTheme"
+		},
+		{
+			id: "fylo",
+			title: "Fylo - HTML, CSS i JS",
+			liveUrl: "/projects/fylo/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/fyloDarkTheme"
+		},
+		{
+			id: "bookmark",
+			title: "Bookmark - Gatsby",
+			liveUrl: "/projects/bookmark/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/bookmarkTheme"
+		},
+		{
+			id: "todo",
+			title: "To Do List - React",
+			liveUrl: "/projects/todo/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/toDoList"
+		}
+	],
 	contact: {
 		btn: "Wyślij",
 		inputs: [
