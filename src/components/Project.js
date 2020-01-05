@@ -30,9 +30,8 @@ const Project = ({ data }) => {
 		if (data.id === item.node.name) {
 			projectNode = item;
 		}
+		return null;
 	});
-
-	console.log(projectNode);
 
 	return (
 		<section className={styles.project}>
@@ -48,6 +47,10 @@ const Project = ({ data }) => {
 			</div>
 		</section>
 	);
+};
+
+Project.propTypes = {
+	data: PropTypes.object.isRequired
 };
 
 export default Project;
