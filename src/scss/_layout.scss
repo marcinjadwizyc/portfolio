@@ -6,6 +6,19 @@
 	min-height: 100vh;
 }
 
+.error {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	& > *:first-child {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
 .background {
 	position: fixed;
 	top: 0;

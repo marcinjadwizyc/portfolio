@@ -1,4 +1,8 @@
 module.exports = {
+	siteMetadata: {
+		title: "Marcin Jadwiżyc - Portfolio",
+		description: ""
+	},
 	plugins: [
 		`gatsby-plugin-sass`,
 		`gatsby-transformer-sharp`,
