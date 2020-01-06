@@ -23,8 +23,8 @@ export default {
 	about: {
 		texts: [
 			"Cześć! Nazywam się Marcin Jadwiżyc i jestem programistą zajmującym się tworzeniem wyglądu stron internetowych oraz aplikacji webowych. Tematyką frontendową zajmuję się od około 2 lat, na początku ucząc się samodzielnie, a od około roku, również zawodowo na stanowisku Front-end Developera. Moje doświadczenie obejmuje tworzenie layoutów, refaktoryzację istniejących komponentów interfejsu użytkownika, oraz pracę z rozbudowaną bazą kodu (tzw. spaghetti code).",
-			"Prywatnie ciągle rozwijam swoje kompetencję w szczegolności skupiając się na zagadnieniach związanych z JavaScriptem. Obecnie planuję poszerzyć swoją wiedzę dot. Reacta oraz rozpocząć naukę Vue.js. Poza programowaniem zawzięcie pochłaniam nowości muzyczne, gram na konsoli lub medytuję.",
-			'Zapraszam do zapoznania się z moimi projektami w zakładce "Projekty". Jeśli chcesz się ze mną skontaktować skorzystaj z formularza na stronie lub zajrzyj na moje profile na GitHub i LinkedIn do których linki znajdziesz poniżej.'
+			"Prywatnie ciągle rozwijam swoje kompetencje, w szczegolności skupiając się na zagadnieniach związanych z JavaScriptem. Obecnie poszerzam swoją wiedzę dot. Reacta oraz planuję rozpocząć naukę Vue.js. Poza programowaniem gram na konsoli, medytuję lub pochłaniam nowości muzyczne i filmowe.",
+			'Zapraszam do zapoznania się z moimi projektami w zakładce "Projekty". Jeśli chcesz się ze mną skontaktować, skorzystaj z formularza na stronie lub zajrzyj na moje profile na GitHub i LinkedIn, do których linki znajdziesz poniżej.'
 		],
 		list: {
 			title: "Technologie:",

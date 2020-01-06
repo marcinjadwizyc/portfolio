@@ -6,28 +6,28 @@ export default {
 		links: [
 			{
 				id: "about",
-				text: "O mnie"
+				text: "About"
 			},
 			{
 				id: "projects",
-				text: "Projekty"
+				text: "Projects"
 			},
 			{
 				id: "contact",
-				text: "Kontakt"
+				text: "Contact"
 			}
 		],
 		title: "Marcin Jadwiżyc",
-		subtitle: "Frontend developer"
+		subtitle: "Front-end developer"
 	},
 	about: {
 		texts: [
-			"Cześć! Nazywam się Marcin Jadwiżyc i jestem programistą zajmującym się tworzeniem wyglądu stron internetowych oraz aplikacji webowych. Tematyką frontendową zajmuję się od około 2 lat, na początku ucząc się samodzielnie, a od około roku, również zawodowo na stanowisku Front-end Developera. Moje doświadczenie obejmuje tworzenie layoutów, refaktoryzację istniejących komponentów interfejsu użytkownika, oraz pracę z rozbudowaną bazą kodu (tzw. spaghetti code).",
-			"Prywatnie ciągle rozwijam swoje kompetencję w szczegolności skupiając się na zagadnieniach związanych z JavaScriptem. Obecnie planuję poszerzyć swoją wiedzę dot. Reacta oraz rozpocząć naukę Vue.js. Poza programowaniem zawzięcie pochłaniam nowości muzyczne, gram na konsoli lub medytuję.",
-			'Zapraszam do zapoznania się z moimi projektami w zakładce "Projekty". Jeśli chcesz się ze mną skontaktować skorzystaj z formularza na stronie lub zajrzyj na moje profile na GitHub i LinkedIn do których linki znajdziesz poniżej.'
+			"Hi! My name is Marcin Jadwiżyc and I'm programming websites and web applications. I started my journey with front-end about 2 years ago. At first I was doing a lot of self study and now for about a year I'm also working as a Front-end Developer. I'm experienced in programming layouts, refactoring existing UI components and work with a large codebases.",
+			"On my free time I continually develop my front-end skills, especially around JavaScript. As of today I'm focusing on expanding my knowledge about React and I'm also planning to learn a bit of Vue.js. Besides programming I play video games, meditate and consume a lot of new music and movies.",
+			'You\'re welcome to check my projects under the "Projects" tab. If you would like to contact me please use the form that you can find on the page under "Contact" tab or you can visit my GitHub and LinkedIn profiles that are linked below.'
 		],
 		list: {
-			title: "Technologie:",
+			title: "Technologies:",
 			content: [ "HTML5", "CSS3", "JavaScript ES6+", "React", "Gatsby" ]
 		},
 		links: [
@@ -46,13 +46,13 @@ export default {
 	projects: [
 		{
 			id: "clipboard",
-			title: "Clipboard - HTML i CSS",
+			title: "Clipboard - HTML & CSS",
 			liveUrl: "/projects/clipboard/index.html",
 			gitUrl: "https://github.com/marcinjadwizyc/clipboardTheme"
 		},
 		{
 			id: "fylo",
-			title: "Fylo - HTML, CSS i JS",
+			title: "Fylo - HTML, CSS & JS",
 			liveUrl: "/projects/fylo/index.html",
 			gitUrl: "https://github.com/marcinjadwizyc/fyloDarkTheme"
 		},
@@ -70,38 +70,38 @@ export default {
 		}
 	],
 	contact: {
-		btn: "Wyślij",
+		btn: "Send",
 		inputs: [
 			{
 				name: "name",
 				type: "text",
-				label: "Imię",
-				placeholder: "Twoje imię...",
-				validationMsg: "Dodaj imię",
+				label: "Name",
+				placeholder: "Your name...",
+				validationMsg: "Add your name",
 				isTextarea: false
 			},
 			{
 				name: "email",
 				type: "email",
 				label: "E-mail",
-				placeholder: "Twoje adres e-mail...",
-				validationMsg: "Dodaj adres e-mail",
+				placeholder: "Your e-mail address...",
+				validationMsg: "Add your e-mail address",
 				isTextarea: false
 			},
 			{
 				name: "subject",
 				type: "text",
-				label: "Temat",
-				placeholder: "Temat twojej wiadomości...",
-				validationMsg: "Dodaj temat wiadomości",
+				label: "Subject",
+				placeholder: "Subject of your message...",
+				validationMsg: "Add the subject",
 				isTextarea: false
 			},
 			{
 				name: "message",
 				type: "",
-				label: "Wiadomość",
-				placeholder: "Treść twojej wiadomości...",
-				validationMsg: "Dodaj treść wiadomości",
+				label: "Message",
+				placeholder: "Your message...",
+				validationMsg: "Add your message",
 				isTextarea: true
 			}
 		]

@@ -4,6 +4,7 @@ import dataPL from "../data/dataPL";
 import dataENG from "../data/dataENG";
 import "../scss/global.scss";
 
+import SEO from "../components/seo";
 import ParticlesBg from "../components/ParticlesBg";
 import LangPicker from "../components/LangPicker";
 import Header from "../containers/Header";
@@ -27,19 +28,23 @@ const Index = () => {
 	};
 
 	const data = lang === "PL" ? dataPL : dataENG;
+	const metaLang = lang === "PL" ? "pl" : "en";
 
 	return (
-		<div className="container">
-			<ParticlesBg />
-			<LangPicker activeSection={activeSection} currentLang={lang} changeLangHandler={changeLangHandler} />
-			<StateContext.Provider
-				value={{ data: data, activeSection: activeSection, activeSectionHandler: activeSectionHandler }}
-			>
-				<Header activeSection={activeSection} data={data} />
-				<Main activeSection={activeSection} />
-				<Footer />
-			</StateContext.Provider>
-		</div>
+		<React.Fragment>
+			<SEO lang={metaLang} />
+			<div className="container">
+				<ParticlesBg />
+				<LangPicker activeSection={activeSection} currentLang={lang} changeLangHandler={changeLangHandler} />
+				<StateContext.Provider
+					value={{ data: data, activeSection: activeSection, activeSectionHandler: activeSectionHandler }}
+				>
+					<Header activeSection={activeSection} data={data} />
+					<Main activeSection={activeSection} />
+					<Footer />
+				</StateContext.Provider>
+			</div>
+		</React.Fragment>
 	);
 };
 
