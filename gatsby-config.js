@@ -17,6 +17,18 @@ module.exports = {
 				path: `${__dirname}/src/images/`,
 				ignore: [ `**/\.*` ] // ignore files starting with a dot
 			}
+		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Marcin Jadwiżyc - Portfolio`,
+				short_name: `mjdev`,
+				start_url: `/`,
+				background_color: `#0e1e24`,
+				theme_color: `#0e1e24`,
+				display: `minimal-ui`,
+				icon: `src/icon.png` // This path is relative to the root of the site.
+			}
 		}
 	]
 };
