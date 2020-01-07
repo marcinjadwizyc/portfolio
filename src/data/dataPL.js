@@ -18,7 +18,7 @@ export default {
 			}
 		],
 		title: "Marcin Jadwiżyc",
-		subtitle: "Frontend developer"
+		subtitle: "Front-end developer"
 	},
 	about: {
 		texts: [
