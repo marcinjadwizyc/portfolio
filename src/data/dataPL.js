@@ -67,6 +67,12 @@ export default {
 			title: "To Do List - React",
 			liveUrl: "/projects/todo/index.html",
 			gitUrl: "https://github.com/marcinjadwizyc/toDoList"
+		},
+		{
+			id: "meditation",
+			title: "Meditation Timer - React",
+			liveUrl: "/projects/meditationApp/index.html",
+			gitUrl: "https://github.com/marcinjadwizyc/meditationApp"
 		}
 	],
 	contact: {

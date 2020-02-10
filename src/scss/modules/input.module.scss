@@ -29,9 +29,10 @@
 
 .input {
 	padding: 4px 6px;
-	color: $colorBg;
+	color: $colorWhite;
 	border: 1px solid $colorWhite;
 	border-radius: $borderRadius;
+	background-color: transparent;
 	line-height: 1.5;
 	resize: none;
 }
