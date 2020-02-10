@@ -71,7 +71,7 @@ export default {
 		{
 			id: "meditation",
 			title: "Meditation Timer - React",
-			liveUrl: "/projects/meditationApp/index.html",
+			liveUrl: "/projects/meditation/index.html",
 			gitUrl: "https://github.com/marcinjadwizyc/meditationApp"
 		}
 	],
